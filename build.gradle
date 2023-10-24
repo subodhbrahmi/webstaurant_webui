@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.webstaurant.webui'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+
+    testImplementation group: 'org.testng', name: 'testng', version: '7.7.0'
+    testImplementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '5.0.3'
+    testImplementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+    testImplementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.21.0'
+    testImplementation group: 'org.apache.logging.log4j', name: 'log4j-core', version:'2.21.0'
+
+}
+
+test {
+    useTestNG()
+}
