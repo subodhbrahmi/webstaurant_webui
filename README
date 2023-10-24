@@ -4,7 +4,15 @@ The project is setup via gradle v8.2 and Java 11.2
 
 1. Clone the repo
 
-2. Execute build
+git clone https://github.com/subodhbrahmi/webstaurant_webui
+
+2. Execute build (make sure you have gradle and java installed)
+
+./gradlew build
+
+3. Check execution report:
+
+	build/reports/tests/test/index.html
 
 
 
